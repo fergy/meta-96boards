@@ -3,7 +3,7 @@
 
 def get_include_handler(d):
     machine = d.getVar('MACHINE', True)
-    if (machine == "dragonboard-410c"):
+    if (machine == "dragonboard-410c" || "sc20"):
         include = "recipes-kernel/linux/linux-qcom-bootimg.inc"
     else:
         include = "recipes-kernel/linux/file-cannot-be-found.inc"
